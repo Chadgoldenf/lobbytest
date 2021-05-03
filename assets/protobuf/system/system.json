@@ -1,0 +1,195 @@
+{
+  "nested": {
+    "com": {
+      "nested": {
+        "secunet": {
+          "nested": {
+            "common": {
+              "nested": {
+                "game": {
+                  "nested": {
+                    "protobuf": {
+                      "nested": {
+                        "system": {
+                          "options": {
+                            "optimize_for": "SPEED",
+                            "java_multiple_files": true,
+                            "java_package": "com.secunet.common.game.protobuf.system"
+                          },
+                          "nested": {
+                            "ProtocolID": {
+                              "options": {
+                                "allow_alias": true
+                              },
+                              "values": {
+                                "PROTOCOL_ID_NONE": 0,
+                                "CMD_LOGIN": 1,
+                                "MSG_LOGIN_RESULT": 1,
+                                "CMD_CLIENT_UI_READY": 2,
+                                "CMD_DISCONNECT": 3,
+                                "MSG_DISCONNECT": 3,
+                                "CMD_HEART_BEAT": 4,
+                                "MSG_HEART_BEAT": 4
+                              }
+                            },
+                            "LoginData": {
+                              "fields": {
+                                "platformCode": {
+                                  "type": "string",
+                                  "id": 1
+                                },
+                                "msInstanceId": {
+                                  "type": "int64",
+                                  "id": 2
+                                },
+                                "gameId": {
+                                  "type": "int32",
+                                  "id": 3
+                                },
+                                "arenaId": {
+                                  "type": "int32",
+                                  "id": 4
+                                },
+                                "branchId": {
+                                  "type": "int32",
+                                  "id": 5
+                                },
+                                "accessToken": {
+                                  "type": "string",
+                                  "id": 6
+                                },
+                                "userId": {
+                                  "type": "int64",
+                                  "id": 7
+                                },
+                                "userName": {
+                                  "type": "string",
+                                  "id": 8
+                                },
+                                "nickName": {
+                                  "type": "string",
+                                  "id": 9
+                                },
+                                "avatarUrl": {
+                                  "type": "string",
+                                  "id": 10
+                                },
+                                "gameParameter": {
+                                  "type": "string",
+                                  "id": 11
+                                },
+                                "browser": {
+                                  "type": "string",
+                                  "id": 12
+                                },
+                                "deviceOs": {
+                                  "type": "string",
+                                  "id": 13
+                                }
+                              }
+                            },
+                            "LoginResult": {
+                              "fields": {
+                                "errorCode": {
+                                  "type": "sint32",
+                                  "id": 1
+                                },
+                                "errorMessage": {
+                                  "type": "string",
+                                  "id": 2
+                                }
+                              }
+                            },
+                            "ServerDisconnect": {
+                              "fields": {
+                                "reason": {
+                                  "type": "sint32",
+                                  "id": 1
+                                },
+                                "disconnectCause": {
+                                  "type": "string",
+                                  "id": 2
+                                }
+                              }
+                            },
+                            "HeartBeatData": {
+                              "fields": {
+                                "jsonCommand": {
+                                  "type": "string",
+                                  "id": 1
+                                }
+                              }
+                            },
+                            "SystemUpdate": {
+                              "oneofs": {
+                                "updateOneof": {
+                                  "oneof": [
+                                    "loginResult",
+                                    "serverDisconnect",
+                                    "heartBeatData"
+                                  ]
+                                }
+                              },
+                              "fields": {
+                                "loginResult": {
+                                  "type": "LoginResult",
+                                  "id": 1
+                                },
+                                "serverDisconnect": {
+                                  "type": "ServerDisconnect",
+                                  "id": 3
+                                },
+                                "heartBeatData": {
+                                  "type": "HeartBeatData",
+                                  "id": 4
+                                }
+                              }
+                            },
+                            "ServerToClient": {
+                              "fields": {
+                                "updateList": {
+                                  "rule": "repeated",
+                                  "type": "SystemUpdate",
+                                  "id": 1
+                                }
+                              }
+                            },
+                            "ClientToServer": {
+                              "oneofs": {
+                                "request": {
+                                  "oneof": [
+                                    "jsonCommand",
+                                    "loginData",
+                                    "heartBeatData"
+                                  ]
+                                }
+                              },
+                              "fields": {
+                                "jsonCommand": {
+                                  "type": "string",
+                                  "id": 1
+                                },
+                                "loginData": {
+                                  "type": "LoginData",
+                                  "id": 2
+                                },
+                                "heartBeatData": {
+                                  "type": "HeartBeatData",
+                                  "id": 3
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

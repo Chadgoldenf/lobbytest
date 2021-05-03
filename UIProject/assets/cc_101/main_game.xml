@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080">
+  <controller name="ctrlGameStep" exported="true" pages="0,None,1,Prepare,2,RoundStart,16,Deal" selected="0"/>
+  <displayList>
+    <image id="n150_fgru" name="bgGame" src="fgruau" fileName="assets/game/bg/bg_game.jpg" xy="-390,-810" pivot="0.5,0.5" size="2700,2700">
+      <relation target="" sidePair="left-center"/>
+    </image>
+    <component id="n155_fgru" name="stage" src="mp4kce" fileName="assets/views/stage.xml" xy="-240,120" pivot="0.5,0.5">
+      <relation target="" sidePair="center-center,top-top%,topext-top%"/>
+    </component>
+    <component id="n3_hi0u" name="btnMenu" src="em2vam" fileName="assets/views/btn_new/btn_menu.xml" xy="20,20" pivot="0.5,0">
+      <relation target="" sidePair="left-left"/>
+    </component>
+    <component id="n38_uev3" name="roomInfo" src="hi0u6o" fileName="assets/views/room/room_info.xml" xy="157,43">
+      <relation target="" sidePair="left-left"/>
+    </component>
+    <component id="n122_em2v" name="settlement" src="em2vai" fileName="assets/views/window/settlement/win_list.xml" xy="0,0" touchable="false" controller="ctrlWindowType,3,ctrlTopWinner,0">
+      <gearDisplay controller="ctrlGameStep" pages=""/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <loader3D id="n158_gj3s" name="ani_star" xy="0,0" size="2030,1080" url="ui://spf3kkkggj3se8" animation="animation" skin="" playing="false">
+      <gearAni controller="ctrlGameStep" pages="1" values="0,p" default="0,s"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader3D>
+    <loader3D id="n163_gj3s" name="ani_niuniu" xy="523,296" size="808,589" url="ui://spf3kkkguev39i" animation="newAnimation" skin="" playing="false" loop="true">
+      <gearAni controller="ctrlGameStep" pages="1" values="0,p" default="0,s"/>
+    </loader3D>
+  </displayList>
+  <transition name="transPicError"/>
+</component>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080">
+  <controller name="ctrlWindowType" exported="true" pages="0,win,1,lose" selected="0"/>
+  <displayList>
+    <image id="n58_uev3" name="n0" src="uev38k" fileName="assets/common/ui/pic_black.png" xy="0,0" pivot="0.5,0.5" size="1920,1080" alpha="0.7"/>
+    <loader id="n1_uev3" name="n1" xy="0,314" size="1920,520" url="ui://spf3kkkghi0u2h" fill="scaleFree">
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2c" default="ui://spf3kkkghi0u2h"/>
+    </loader>
+    <loader3D id="n0_uev3" name="aniLoader" xy="0,0" size="1923,1126" visible="false" url="ui://spf3kkkguev384" animation="" skin="" loop="true">
+      <gearIcon controller="ctrlWindowType" default="ui://spf3kkkguev384"/>
+    </loader3D>
+    <loader id="n3_uev3" name="n3" xy="0,430" size="1920,76" group="n11_uev3" url="ui://spf3kkkghi0u2i" fill="scaleFree" color="#646464">
+      <gearColor controller="ctrlWindowType" pages="1" values="#ffffff" default="#646464"/>
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2d" default="ui://spf3kkkghi0u2i"/>
+    </loader>
+    <loader id="n6_uev3" name="n4" xy="0,506" size="1920,76" group="n11_uev3" url="ui://spf3kkkghi0u2i" fill="scaleFree" color="#646464">
+      <gearColor controller="ctrlWindowType" pages="1" values="#ffffff" default="#646464"/>
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2d" default="ui://spf3kkkghi0u2i"/>
+    </loader>
+    <loader id="n7_uev3" name="n5" xy="0,582" size="1920,76" group="n11_uev3" url="ui://spf3kkkghi0u2i" fill="scaleFree" color="#646464">
+      <gearColor controller="ctrlWindowType" pages="1" values="#ffffff" default="#646464"/>
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2d" default="ui://spf3kkkghi0u2i"/>
+    </loader>
+    <loader id="n8_uev3" name="n6" xy="0,658" size="1920,76" group="n11_uev3" url="ui://spf3kkkghi0u2i" fill="scaleFree" color="#646464">
+      <gearColor controller="ctrlWindowType" pages="1" values="#ffffff" default="#646464"/>
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2d" default="ui://spf3kkkghi0u2i"/>
+    </loader>
+    <loader id="n9_uev3" name="n7" xy="0,734" size="1920,76" group="n11_uev3" url="ui://spf3kkkghi0u2i" fill="scaleFree" color="#646464">
+      <gearColor controller="ctrlWindowType" pages="1" values="#ffffff" default="#646464"/>
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2d" default="ui://spf3kkkghi0u2i"/>
+    </loader>
+    <group id="n11_uev3" name="n2" xy="0,430" size="1920,380"/>
+    <image id="n12_uev3" name="n8" src="hi0u2i" fileName="assets/common/ui/pic_winList.png" xy="0,430" size="1920,76"/>
+    <image id="n56_uev3" name="n9" src="uev38h" fileName="assets/common/ui/pic_crown.png" xy="309,436"/>
+    <text id="n13_uev3" name="n11" xy="450,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="昵称">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <text id="n14_uev3" name="n12" xy="684,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="牌型">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <text id="n15_uev3" name="n13" xy="918,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="底分">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <text id="n16_uev3" name="n14" xy="1152,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="下注">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <text id="n17_uev3" name="n15" xy="1386,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="得分">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <group id="n18_uev3" name="n10" xy="450,374" size="1020,54"/>
+    <component id="n26_uev3" name="player_0" src="em2vac" fileName="player_settlement.xml" xy="425,444" controller="ctrlPlayerType,0,ctrlWinLoseType,0"/>
+    <component id="n32_uev3" name="player_1" src="em2vac" fileName="player_settlement.xml" xy="425,520" controller="ctrlPlayerType,1,ctrlWinLoseType,0"/>
+    <component id="n38_uev3" name="player_2" src="em2vac" fileName="player_settlement.xml" xy="425,596" controller="ctrlPlayerType,1,ctrlWinLoseType,0"/>
+    <component id="n44_uev3" name="player_3" src="em2vac" fileName="player_settlement.xml" xy="425,672" controller="ctrlPlayerType,1,ctrlWinLoseType,0"/>
+  </displayList>
+</component>

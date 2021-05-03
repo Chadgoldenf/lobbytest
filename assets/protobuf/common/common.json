@@ -1,0 +1,124 @@
+{
+  "nested": {
+    "com": {
+      "nested": {
+        "secunet": {
+          "nested": {
+            "common": {
+              "nested": {
+                "game": {
+                  "nested": {
+                    "protobuf": {
+                      "nested": {
+                        "common": {
+                          "options": {
+                            "optimize_for": "SPEED",
+                            "java_multiple_files": true,
+                            "java_package": "com.secunet.common.game.protobuf.common"
+                          },
+                          "nested": {
+                            "ProtocolID": {
+                              "options": {
+                                "allow_alias": true
+                              },
+                              "values": {
+                                "PROTOCOL_ID_NONE": 0,
+                                "MSG_SERVER_VERSION": 1,
+                                "CMD_USER_AVATAR_URL": 3,
+                                "MSG_USER_AVATAR_URL": 3,
+                                "CMD_DEBUG_COMMAND": 4,
+                                "MSG_DEBUG_COMMAND": 4
+                              }
+                            },
+                            "ServerVersionInfo": {
+                              "fields": {
+                                "serverVersion": {
+                                  "type": "string",
+                                  "id": 1
+                                }
+                              }
+                            },
+                            "ChangeAvatarUrl": {
+                              "fields": {
+                                "userId": {
+                                  "type": "int64",
+                                  "id": 1
+                                },
+                                "avatarUrl": {
+                                  "type": "string",
+                                  "id": 2
+                                }
+                              }
+                            },
+                            "DebugCommandResult": {
+                              "fields": {
+                                "resultCode": {
+                                  "type": "int32",
+                                  "id": 1
+                                }
+                              }
+                            },
+                            "CommonUpdate": {
+                              "oneofs": {
+                                "updateOneof": {
+                                  "oneof": [
+                                    "serverVersionInfo",
+                                    "changeAvatarUrl",
+                                    "debugCommandResult"
+                                  ]
+                                }
+                              },
+                              "fields": {
+                                "serverVersionInfo": {
+                                  "type": "ServerVersionInfo",
+                                  "id": 1
+                                },
+                                "changeAvatarUrl": {
+                                  "type": "ChangeAvatarUrl",
+                                  "id": 2
+                                },
+                                "debugCommandResult": {
+                                  "type": "DebugCommandResult",
+                                  "id": 3
+                                }
+                              }
+                            },
+                            "ServerToClient": {
+                              "fields": {
+                                "errorCode": {
+                                  "type": "sint32",
+                                  "id": 1
+                                },
+                                "errorString": {
+                                  "type": "string",
+                                  "id": 2
+                                },
+                                "updateList": {
+                                  "rule": "repeated",
+                                  "type": "CommonUpdate",
+                                  "id": 3
+                                }
+                              }
+                            },
+                            "ClientToServer": {
+                              "fields": {
+                                "jsonCommand": {
+                                  "type": "string",
+                                  "id": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

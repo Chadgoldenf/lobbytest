@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="260,137">
+  <displayList>
+    <loader id="n49_uev3" name="card_0" xy="0,0" size="100,137" group="n54_uev3" aspect="true" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <loader id="n50_uev3" name="card_1" xy="40,0" size="100,137" group="n54_uev3" aspect="true" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <loader id="n51_uev3" name="card_2" xy="80,0" size="100,137" group="n54_uev3" aspect="true" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <loader id="n52_uev3" name="card_3" xy="120,0" size="100,137" group="n54_uev3" aspect="true" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <loader id="n53_uev3" name="card_4" xy="160,0" size="100,137" group="n54_uev3" aspect="true" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <group id="n54_uev3" name="card" xy="0,0" size="260,137"/>
+  </displayList>
+  <transition name="transCard_1">
+    <item time="0" type="XY" target="n49_uev3" value="0,0"/>
+    <item time="0" type="XY" target="n49_uev3" tween="true" startValue="80,0" endValue="0,0" duration="4"/>
+    <item time="0" type="XY" target="n50_uev3" tween="true" startValue="80,0" endValue="40,0" duration="4"/>
+    <item time="0" type="XY" target="n51_uev3" value="80,0"/>
+    <item time="0" type="XY" target="n52_uev3" tween="true" startValue="80,0" endValue="120,0" duration="4"/>
+    <item time="0" type="XY" target="n53_uev3" tween="true" startValue="80,0" endValue="160,0" duration="4"/>
+  </transition>
+</component>

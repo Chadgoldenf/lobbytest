@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="2400,1080">
+  <controller name="ctrlGameStep" exported="true" pages="0,None,1,Prepare,2,RoundStart,16,Deal" selected="0"/>
+  <displayList>
+    <component id="n155_fgru" name="bg_table" src="fgru2" fileName="assets/views/bg_table.xml" xy="0,0"/>
+    <component id="n45_uev3" name="timeClock" src="uev37q" fileName="assets/views/room/time_clock.xml" xy="1137,337"/>
+    <component id="n32_uev3" name="player_0" src="uev36t" fileName="assets/views/player/player_0.xml" xy="530,690" controller="ctrlWinLose,4"/>
+    <component id="n34_uev3" name="player_1" src="uev36t" fileName="assets/views/player/player_0.xml" xy="380,270" group="n130_em2v" controller="ctrlWinLose,4"/>
+    <component id="n35_uev3" name="player_2" src="uev36t" fileName="assets/views/player/player_0.xml" xy="902,24" group="n130_em2v" controller="ctrlWinLose,4"/>
+    <component id="n36_uev3" name="player_3" src="uev36x" fileName="assets/views/player/player_1.xml" xy="1648,268" group="n130_em2v" controller="ctrlWinLose,4"/>
+    <group id="n130_em2v" name="players" xy="380,24" size="1616,391"/>
+    <component id="n44_uev3" name="betInfo_0" src="uev37p" fileName="assets/views/room/bet_info.xml" xy="1135,590" group="n131_em2v" controller="ctrlBetInfo,0"/>
+    <component id="n41_uev3" name="betInfo_1" src="uev37p" fileName="assets/views/room/bet_info.xml" xy="563,245" group="n131_em2v" controller="ctrlBetInfo,0"/>
+    <component id="n42_uev3" name="betInfo_2" src="uev37p" fileName="assets/views/room/bet_info.xml" xy="1100,10" group="n131_em2v" controller="ctrlBetInfo,0"/>
+    <component id="n43_uev3" name="betInfo_3" src="uev37p" fileName="assets/views/room/bet_info.xml" xy="1649,243" group="n131_em2v" controller="ctrlBetInfo,0"/>
+    <group id="n131_em2v" name="betInfo" xy="563,10" size="1224,633"/>
+    <component id="n149_ihjc" name="cardLicensing" src="ihjcap" fileName="assets/views/poker/cardLicensing.xml" xy="240,-140" visible="false">
+      <relation target="" sidePair="center-center"/>
+    </component>
+    <component id="n27_uev3" name="cardf_0" src="p8v5a7" fileName="assets/views/poker/card_0.xml" xy="875,660"/>
+    <component id="n139_ihjc" name="card_1" src="p8v5a8" fileName="assets/views/poker/card_1.xml" xy="430,440" group="n133_em2v"/>
+    <component id="n89_uev3" name="card_2" src="p8v5a8" fileName="assets/views/poker/card_1.xml" xy="1266,40" group="n133_em2v"/>
+    <component id="n66_uev3" name="card_3" src="p8v5a8" fileName="assets/views/poker/card_1.xml" xy="1699,440" group="n133_em2v"/>
+    <group id="n133_em2v" name="card" xy="430,40" size="1529,537"/>
+    <component id="n123_em2v" name="cardType_0" src="em2vaj" fileName="assets/views/room/cardType.xml" xy="1109,725" controller="ctrlCardType,0"/>
+    <component id="n127_em2v" name="cardType_1" src="em2vaj" fileName="assets/views/room/cardType.xml" xy="447,474" group="n134_em2v" controller="ctrlCardType,0"/>
+    <component id="n128_em2v" name="cardType_2" src="em2vaj" fileName="assets/views/room/cardType.xml" xy="1274,82" group="n134_em2v" controller="ctrlCardType,0"/>
+    <component id="n129_em2v" name="cardType_3" src="em2vaj" fileName="assets/views/room/cardType.xml" xy="1715,474" group="n134_em2v" controller="ctrlCardType,0"/>
+    <group id="n134_em2v" name="cardType" xy="447,82" size="1490,460"/>
+    <component id="n115_uev3" name="btnBet_0" src="em2van" fileName="assets/views/btn_new/btn_yellow.xml" xy="587,509" size="242,106" group="n137_em2v">
+      <Button title="{value=1} 倍" titleColor="#ffffcc" titleFontSize="35"/>
+    </component>
+    <component id="n116_uev3" name="btnBet_1" src="em2van" fileName="assets/views/btn_new/btn_yellow.xml" xy="833,509" size="242,106" group="n137_em2v">
+      <Button title="{value=1} 倍" titleColor="#ffffcc" titleFontSize="35"/>
+    </component>
+    <component id="n117_uev3" name="btnBet_2" src="em2van" fileName="assets/views/btn_new/btn_yellow.xml" xy="1079,509" size="242,106" group="n137_em2v">
+      <Button title="{value=1} 倍" titleColor="#ffffcc" titleFontSize="35"/>
+    </component>
+    <component id="n118_uev3" name="btnBet_3" src="em2van" fileName="assets/views/btn_new/btn_yellow.xml" xy="1325,509" size="242,106" group="n137_em2v">
+      <Button title="{value=1} 倍" titleColor="#ffffcc" titleFontSize="35"/>
+    </component>
+    <component id="n119_uev3" name="btnBet_4" src="em2van" fileName="assets/views/btn_new/btn_yellow.xml" xy="1571,509" size="242,106" group="n137_em2v">
+      <Button title="{value=1} 倍" titleColor="#ffffcc" titleFontSize="35"/>
+    </component>
+    <group id="n137_em2v" name="btnBet" xy="587,509" size="1226,106" group="n138_em2v"/>
+    <component id="n121_uev3" name="btnShowdown" src="em2vak" fileName="assets/views/btn_new/btn_azure_blue.xml" xy="1602,741" size="220,100" group="n138_em2v">
+      <Button title="沒 牛"/>
+    </component>
+    <component id="n153_fgru" name="btnNiu" src="em2van" fileName="assets/views/btn_new/btn_yellow.xml" xy="1592,645" size="242,106" group="n138_em2v" scale="0.9,0.9">
+      <Button title="有 牛" titleColor="#ffffcc" titleFontSize="40"/>
+    </component>
+    <group id="n138_em2v" name="btnGame" xy="587,509" size="1247,332"/>
+    <component id="n152_fgru" name="picRemind" src="fgru8" fileName="assets/views/pic_remind.xml" xy="870,430"/>
+    <component id="n154_fgru" name="picError" src="fgru5" fileName="assets/views/pic_error.xml" xy="1605,482" pivot="0.5,0.5"/>
+  </displayList>
+</component>

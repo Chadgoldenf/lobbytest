@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1078,48">
+  <controller name="ctrlPlayerType" exported="true" pages="0,self,1,other" selected="0"/>
+  <controller name="ctrlWinLoseType" exported="true" pages="0,win,1,lose" selected="0"/>
+  <displayList>
+    <text id="n32_uev3" name="textName" xy="0,0" pivot="0.5,0.5" size="132,48" group="n37_uev3" fontSize="35" color="#ffcc00" align="center" text="****999">
+      <gearColor controller="ctrlPlayerType" pages="0" values="#ffcc00,#000000" default="#ffffff,#000000"/>
+    </text>
+    <text id="n33_uev3" name="textCardType" xy="266,0" pivot="0.5,0.5" size="74,48" group="n37_uev3" fontSize="35" color="#ffcc00" align="center" text="牛牛">
+      <gearColor controller="ctrlPlayerType" pages="1" values="#ffffff,#000000" default="#ffcc00,#000000"/>
+    </text>
+    <text id="n34_uev3" name="textAmount" xy="507,0" pivot="0.5,0.5" size="64,48" group="n37_uev3" fontSize="35" color="#ffcc00" align="center" text="888">
+      <gearColor controller="ctrlPlayerType" pages="1" values="#ffffff,#000000" default="#ffcc00,#000000"/>
+    </text>
+    <text id="n35_uev3" name="textBet" xy="758,0" pivot="0.5,0.5" size="24,48" group="n37_uev3" fontSize="35" color="#ffcc00" align="center" text="8">
+      <gearColor controller="ctrlPlayerType" pages="1" values="#ffffff,#000000" default="#ffcc00,#000000"/>
+    </text>
+    <text id="n36_uev3" name="textWinLose" xy="934,0" pivot="0.5,0.5" size="144,48" group="n37_uev3" fontSize="35" color="#ffcc00" align="center" vAlign="middle" vars="true" text="+{points=888888}">
+      <gearColor controller="ctrlPlayerType" pages="1" values="#ffffff,#000000" default="#ffcc00,#000000"/>
+      <gearText controller="ctrlWinLoseType" pages="1" values="-{points=888888}" default="+{points=888888}"/>
+    </text>
+    <group id="n37_uev3" name="Settlement" xy="0,0" size="1078,48"/>
+  </displayList>
+</component>

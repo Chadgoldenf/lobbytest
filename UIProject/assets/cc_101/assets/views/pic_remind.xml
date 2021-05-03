@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="660,175">
+  <controller name="ctrlRemind" exported="true" pages="0,None,1,Enter" selected="1"/>
+  <displayList>
+    <image id="n156_hjz4" name="picpinpaiBg" src="fgru9" fileName="assets/game/pic/pic_pinpaiBg.png" xy="46,87"/>
+    <text id="n157_hjz4" name="textPinpai_1" xy="95,100" pivot="0.5,0.5" size="52,54" fontSize="40" color="#ffffff" vars="true" bold="true" text="{count=99}">
+      <gearDisplay controller="ctrlRemind" pages="1"/>
+    </text>
+    <text id="n159_hjz4" name="textPinpai_2" xy="235,100" pivot="0.5,0.5" size="52,54" fontSize="40" color="#ffffff" vars="true" bold="true" text="{count=99}">
+      <gearDisplay controller="ctrlRemind" pages="1"/>
+    </text>
+    <text id="n160_hjz4" name="textPinpai_3" xy="373,100" pivot="0.5,0.5" size="52,54" fontSize="40" color="#ffffff" vars="true" bold="true" text="{count=99}">
+      <gearDisplay controller="ctrlRemind" pages="1"/>
+    </text>
+    <text id="n161_hjz4" name="textPinpai_4" xy="516,100" pivot="0.5,0.5" size="52,54" fontSize="40" color="#ffffff" vars="true" bold="true" text="{count=99}">
+      <gearDisplay controller="ctrlRemind" pages="1"/>
+    </text>
+    <image id="n174_hjz4" name="picPinpai_1" src="fgrua" fileName="assets/game/pic/pic_remind_1.png" xy="0,0" pivot="0.5,0.5" size="660,54" group="n180_hjz4"/>
+    <image id="n177_hjz4" name="picPinpai_2" src="fgrub" fileName="assets/game/pic/pic_remind_2.png" xy="319,47" group="n180_hjz4"/>
+    <text id="n182_hjz4" name="n182" xy="19,7" size="624,39" group="n180_hjz4" fontSize="28" color="#ffffcc" strokeColor="#993300" strokeSize="2" text="点选三张点数之和为10的倍数的牌，然后点击有牛"/>
+    <group id="n180_hjz4" name="picPinpai_1" xy="0,0" size="660,71"/>
+  </displayList>
+</component>

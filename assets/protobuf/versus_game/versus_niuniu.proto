@@ -1,0 +1,95 @@
+//
+// protoc -I=. --cpp_out=. ./versus_niuniu.proto
+// protoc --java_out=./ ./com/secunet/versus_niuniu/protobuf/versus_niuniu.proto
+//
+
+syntax = "proto3";
+package com.secunet.versus_niuniu.protobuf;
+
+// Action
+option optimize_for = SPEED;
+option java_package = "com.secunet.versus_niuniu.protobuf";
+
+enum EnumNiuProtocol {
+    unknow			= 0;
+    Update			= 1001;
+}
+
+// CARD:0~51
+// 0~12 :SPADE 1~13
+// 13~25:HEART 1~13
+// 26~38:DIAMOND 1~13
+// 39~51 :CLUB 1~13
+enum EnumNiuType {
+    Default	= 0;
+    NoNiu	= 1;        // 無牛
+    Niu_1  = 2;         // 牛1
+    Niu_2  = 3;         // 牛2
+    Niu_3  = 4;         // 牛3
+    Niu_4  = 5;         // 牛4
+    Niu_5  = 6;         // 牛5
+    Niu_6  = 7;         // 牛6
+    Niu_7  = 8;         // 牛7
+    Niu_8  = 9;         // 牛8
+    Niu_9  = 10;        // 牛9
+    NiuNiu = 11;        // 牛牛
+    Four_Niu= 12;       // 四花牛
+    FiveNiu	= 13;       // 五花牛
+    Bomb		= 14;   // 炸彈
+    FiveSmall	= 15;   // 五小牛
+}
+
+message NiuRoomState {
+    enum GameStep {
+        None            = 0;
+        Prepare         = 1;
+        RoundStart      = 2;
+        Deal            = 3;
+        Showdown        = 4;
+        Settlement      = 5;
+        Waiting_PayoutFinish = 6;
+        RoundOver       = 7;
+    }
+
+    message WinInfo {
+        int32 looser_seat_id    = 1;
+		    int64 win_points    	= 2;
+    }
+    message SeatData {
+        int32 seat_id		= 1;                //
+        EnumNiuType niu_type= 2;            // 手牌牛的結果
+        repeated int32 cards= 3;            // 手牌的五張牌
+        bool is_winner      = 4;
+        int64 win_loss      = 5;            // 自己在這局的總輸贏
+        repeated WinInfo win_list = 6;      // 贏家贏其它家的各別狀況
+    }
+
+    int32 room_state		    = 1;
+    string round_id         = 2;        // 局號
+    int32 state_count_down	= 3;        // 此狀態的時間(ms)
+    int32 remain_count_down	= 4;        // 狀態剩餘時間(ms)
+    int64 ante              = 5;        // 底注
+    repeated SeatData seat_list = 6;    // 每個位置的詳細資訊
+}
+
+message NiuUpdate {
+    enum EnumUpdateType {
+        UNKNOWN         = 0;
+        ROOMSTATE		= 2;
+    }
+
+	EnumUpdateType update_type  = 1;
+    oneof update_oneof {
+        NiuRoomState room_state = 2;
+    }
+}
+
+message ServerToClient {
+    sint32 error_no     = 1;
+    string error_string = 2;
+    repeated NiuUpdate update_list = 3;
+}
+
+message ClientToServer {
+    string json_command = 1;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="2400,1220">
+  <controller name="bgTable" pages="0,table_0,1,table_1,2,table_2" selected="2"/>
+  <displayList>
+    <image id="n151_hjz4" name="bg_table" src="fgru1" fileName="assets/game/bg/bg_table_0.png" xy="0,0">
+      <gearDisplay controller="bgTable" pages="0"/>
+    </image>
+    <image id="n152_hjz4" name="n152" src="fgru3" fileName="assets/game/bg/bg_table_1.png" xy="0,0">
+      <gearDisplay controller="bgTable" pages="1"/>
+    </image>
+    <image id="n153_hjz4" name="n153" src="fgru4" fileName="assets/game/bg/bg_table_2.png" xy="0,0">
+      <gearDisplay controller="bgTable" pages="2"/>
+    </image>
+  </displayList>
+</component>

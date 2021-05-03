@@ -1,0 +1,146 @@
+
+ani_start.png
+size: 1026,1026
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: true
+  xy: 666, 14
+  size: 54, 79
+  orig: 54, 79
+  offset: 0, 0
+  index: -1
+卷軸0000
+  rotate: false
+  xy: 2, 776
+  size: 510, 248
+  orig: 613, 290
+  offset: 99, 26
+  index: -1
+卷軸0001
+  rotate: false
+  xy: 2, 523
+  size: 421, 251
+  orig: 613, 290
+  offset: 107, 25
+  index: -1
+卷軸0002
+  rotate: false
+  xy: 2, 269
+  size: 345, 252
+  orig: 613, 290
+  offset: 110, 25
+  index: -1
+卷軸0003
+  rotate: false
+  xy: 2, 15
+  size: 297, 252
+  orig: 613, 290
+  offset: 111, 25
+  index: -1
+卷軸0004
+  rotate: false
+  xy: 301, 4
+  size: 253, 252
+  orig: 613, 290
+  offset: 116, 25
+  index: -1
+卷軸0005
+  rotate: true
+  xy: 556, 70
+  size: 186, 253
+  orig: 613, 290
+  offset: 128, 24
+  index: -1
+卷軸0006
+  rotate: false
+  xy: 889, 515
+  size: 119, 253
+  orig: 613, 290
+  offset: 140, 22
+  index: -1
+卷軸0007
+  rotate: false
+  xy: 813, 261
+  size: 119, 251
+  orig: 613, 290
+  offset: 124, 23
+  index: -1
+扇子1
+  rotate: true
+  xy: 811, 16
+  size: 240, 109
+  orig: 257, 140
+  offset: 0, 0
+  index: -1
+扇子2
+  rotate: true
+  xy: 922, 150
+  size: 109, 99
+  orig: 109, 99
+  offset: 0, 0
+  index: -1
+扇子3
+  rotate: true
+  xy: 556, 5
+  size: 63, 108
+  orig: 63, 108
+  offset: 0, 0
+  index: -1
+扇子4
+  rotate: false
+  xy: 934, 266
+  size: 88, 102
+  orig: 88, 102
+  offset: 0, 0
+  index: -1
+扇子5
+  rotate: true
+  xy: 934, 370
+  size: 143, 90
+  orig: 143, 90
+  offset: 0, 0
+  index: -1
+遊戲開始0000
+  rotate: false
+  xy: 514, 898
+  size: 462, 126
+  orig: 471, 135
+  offset: 4, 5
+  index: -1
+遊戲開始0001
+  rotate: false
+  xy: 514, 770
+  size: 462, 126
+  orig: 471, 135
+  offset: 4, 5
+  index: -1
+遊戲開始0002
+  rotate: false
+  xy: 425, 642
+  size: 462, 126
+  orig: 471, 135
+  offset: 4, 5
+  index: -1
+遊戲開始0003
+  rotate: false
+  xy: 425, 514
+  size: 462, 126
+  orig: 471, 135
+  offset: 4, 5
+  index: -1
+遊戲開始0004
+  rotate: false
+  xy: 349, 386
+  size: 462, 126
+  orig: 471, 135
+  offset: 4, 5
+  index: -1
+遊戲開始0005
+  rotate: false
+  xy: 349, 258
+  size: 462, 126
+  orig: 471, 135
+  offset: 4, 5
+  index: -1

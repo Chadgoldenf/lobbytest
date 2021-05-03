@@ -1,0 +1,187 @@
+{
+  "nested": {
+    "com": {
+      "nested": {
+        "secunet": {
+          "nested": {
+            "versus_niuniu": {
+              "nested": {
+                "protobuf": {
+                  "options": {
+                    "optimize_for": "SPEED",
+                    "java_package": "com.secunet.versus_niuniu.protobuf"
+                  },
+                  "nested": {
+                    "EnumNiuProtocol": {
+                      "values": {
+                        "unknow": 0,
+                        "Update": 1001
+                      }
+                    },
+                    "EnumNiuType": {
+                      "values": {
+                        "Default": 0,
+                        "NoNiu": 1,
+                        "Niu_1": 2,
+                        "Niu_2": 3,
+                        "Niu_3": 4,
+                        "Niu_4": 5,
+                        "Niu_5": 6,
+                        "Niu_6": 7,
+                        "Niu_7": 8,
+                        "Niu_8": 9,
+                        "Niu_9": 10,
+                        "NiuNiu": 11,
+                        "Four_Niu": 12,
+                        "FiveNiu": 13,
+                        "Bomb": 14,
+                        "FiveSmall": 15
+                      }
+                    },
+                    "NiuRoomState": {
+                      "fields": {
+                        "roomState": {
+                          "type": "int32",
+                          "id": 1
+                        },
+                        "roundId": {
+                          "type": "string",
+                          "id": 2
+                        },
+                        "stateCountDown": {
+                          "type": "int32",
+                          "id": 3
+                        },
+                        "remainCountDown": {
+                          "type": "int32",
+                          "id": 4
+                        },
+                        "ante": {
+                          "type": "int64",
+                          "id": 5
+                        },
+                        "seatList": {
+                          "rule": "repeated",
+                          "type": "SeatData",
+                          "id": 6
+                        }
+                      },
+                      "nested": {
+                        "GameStep": {
+                          "values": {
+                            "None": 0,
+                            "Prepare": 1,
+                            "RoundStart": 2,
+                            "Deal": 3,
+                            "Showdown": 4,
+                            "Settlement": 5,
+                            "Waiting_PayoutFinish": 6,
+                            "RoundOver": 7
+                          }
+                        },
+                        "WinInfo": {
+                          "fields": {
+                            "looserSeatId": {
+                              "type": "int32",
+                              "id": 1
+                            },
+                            "winPoints": {
+                              "type": "int64",
+                              "id": 2
+                            }
+                          }
+                        },
+                        "SeatData": {
+                          "fields": {
+                            "seatId": {
+                              "type": "int32",
+                              "id": 1
+                            },
+                            "niuType": {
+                              "type": "EnumNiuType",
+                              "id": 2
+                            },
+                            "cards": {
+                              "rule": "repeated",
+                              "type": "int32",
+                              "id": 3
+                            },
+                            "isWinner": {
+                              "type": "bool",
+                              "id": 4
+                            },
+                            "winLoss": {
+                              "type": "int64",
+                              "id": 5
+                            },
+                            "winList": {
+                              "rule": "repeated",
+                              "type": "WinInfo",
+                              "id": 6
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "NiuUpdate": {
+                      "oneofs": {
+                        "updateOneof": {
+                          "oneof": [
+                            "roomState"
+                          ]
+                        }
+                      },
+                      "fields": {
+                        "updateType": {
+                          "type": "EnumUpdateType",
+                          "id": 1
+                        },
+                        "roomState": {
+                          "type": "NiuRoomState",
+                          "id": 2
+                        }
+                      },
+                      "nested": {
+                        "EnumUpdateType": {
+                          "values": {
+                            "UNKNOWN": 0,
+                            "ROOMSTATE": 2
+                          }
+                        }
+                      }
+                    },
+                    "ServerToClient": {
+                      "fields": {
+                        "errorNo": {
+                          "type": "sint32",
+                          "id": 1
+                        },
+                        "errorString": {
+                          "type": "string",
+                          "id": 2
+                        },
+                        "updateList": {
+                          "rule": "repeated",
+                          "type": "NiuUpdate",
+                          "id": 3
+                        }
+                      }
+                    },
+                    "ClientToServer": {
+                      "fields": {
+                        "jsonCommand": {
+                          "type": "string",
+                          "id": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

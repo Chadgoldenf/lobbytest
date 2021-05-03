@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="212,156">
+  <displayList>
+    <image id="n188_hjz4" name="picError" src="fgru6" fileName="assets/game/cn/pic_error_1.png" xy="0,0"/>
+    <image id="n189_hjz4" name="n189" src="fgru7" fileName="assets/game/cn/pic_error_2.png" xy="0,0"/>
+  </displayList>
+  <transition name="transPicErrorLoop" autoPlay="true" autoPlayRepeat="3">
+    <item time="0" type="Alpha" target="n188_hjz4" value="1"/>
+    <item time="0" type="Alpha" target="n189_hjz4" value="0"/>
+    <item time="4" type="Alpha" target="n188_hjz4" value="0"/>
+    <item time="4" type="Alpha" target="n189_hjz4" value="1"/>
+    <item time="8" type="Alpha" target="n188_hjz4" value="1"/>
+    <item time="8" type="Alpha" target="n189_hjz4" value="0"/>
+  </transition>
+</component>

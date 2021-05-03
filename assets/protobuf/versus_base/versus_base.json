@@ -1,0 +1,327 @@
+{
+  "nested": {
+    "com": {
+      "nested": {
+        "secunet": {
+          "nested": {
+            "versus_gamebase": {
+              "nested": {
+                "protobuf": {
+                  "options": {
+                    "optimize_for": "SPEED",
+                    "java_package": "com.secunet.versus_gamebase.protobuf"
+                  },
+                  "nested": {
+                    "ProtocolID": {
+                      "values": {
+                        "PROTOCOLID_NONE": 0,
+                        "CMD_PLAY_AGAIN": 1,
+                        "CMD_CONTINUE_OR_BET": 2,
+                        "CMD_CANCEL_MATCHING": 3,
+                        "CMD_HEART_BEAT": 8,
+                        "MSG_SERVER_VERSION": 101,
+                        "MSG_USER_ENTER_INFO": 102,
+                        "MSG_ROOM_SEATS_INFO": 103,
+                        "MSG_UPDATE_BALANCE": 104,
+                        "MSG_CHANGE_ROUND_ID": 105,
+                        "MSG_CHANGE_GAME_STEP": 106,
+                        "MSG_USER_ONLINE_STATUS": 107,
+                        "MSG_USER_AVATAR_URL": 108,
+                        "MSG_HEART_BEAT": 110,
+                        "ERROR": 400
+                      }
+                    },
+                    "UserStep": {
+                      "values": {
+                        "STEP_UNKNOWN": 0,
+                        "STEP_PLAY_START": 10,
+                        "STEP_PRE_CHECK": 12,
+                        "STEP_ENTER_WITHHOLDING_AMOUNT": 14,
+                        "STEP_MATCHING": 16,
+                        "STEP_PLAYING_VERSUS_GAME": 20,
+                        "STEP_CONTINUE_OR_BET": 30,
+                        "STEP_PLAYING_LITTLE_GAME": 40,
+                        "STEP_PLAY_AGAIN": 50,
+                        "STEP_EXIT_GAME": 100
+                      }
+                    },
+                    "VSGameErrorCode": {
+                      "values": {
+                        "UNKNOWN_ERROR": 0,
+                        "OK": 1
+                      }
+                    },
+                    "UserEnterInfo": {
+                      "fields": {
+                        "gameId": {
+                          "type": "int32",
+                          "id": 1
+                        },
+                        "gameSettingJson": {
+                          "type": "string",
+                          "id": 2
+                        },
+                        "roomKind": {
+                          "type": "int32",
+                          "id": 3
+                        },
+                        "roomInfoJson": {
+                          "type": "string",
+                          "id": 4
+                        },
+                        "userId": {
+                          "type": "int64",
+                          "id": 5
+                        },
+                        "userName": {
+                          "type": "string",
+                          "id": 6
+                        },
+                        "nickName": {
+                          "type": "string",
+                          "id": 7
+                        },
+                        "accountBalance": {
+                          "type": "string",
+                          "id": 8
+                        },
+                        "gameChip": {
+                          "type": "string",
+                          "id": 9
+                        },
+                        "avatarUrl": {
+                          "type": "string",
+                          "id": 10
+                        }
+                      }
+                    },
+                    "RoomSeatsInfo": {
+                      "fields": {
+                        "seatUserList": {
+                          "rule": "repeated",
+                          "type": "SeatUser",
+                          "id": 2
+                        }
+                      },
+                      "nested": {
+                        "SeatUser": {
+                          "fields": {
+                            "seatId": {
+                              "type": "int32",
+                              "id": 1
+                            },
+                            "userName": {
+                              "type": "string",
+                              "id": 2
+                            },
+                            "nickName": {
+                              "type": "string",
+                              "id": 3
+                            },
+                            "accountBalance": {
+                              "type": "string",
+                              "id": 4
+                            },
+                            "gameChip": {
+                              "type": "string",
+                              "id": 5
+                            },
+                            "avatarUrl": {
+                              "type": "string",
+                              "id": 6
+                            },
+                            "isOnline": {
+                              "type": "bool",
+                              "id": 7
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "UpdateBalance": {
+                      "fields": {
+                        "accountBalance": {
+                          "type": "string",
+                          "id": 1
+                        }
+                      }
+                    },
+                    "ChangeRoundId": {
+                      "fields": {
+                        "roundId": {
+                          "type": "string",
+                          "id": 1
+                        }
+                      }
+                    },
+                    "ChangeUserStep": {
+                      "fields": {
+                        "step": {
+                          "type": "int32",
+                          "id": 2
+                        },
+                        "timeLeftMs": {
+                          "type": "int64",
+                          "id": 4
+                        }
+                      }
+                    },
+                    "ChangeOnlineStatus": {
+                      "fields": {
+                        "userId": {
+                          "type": "int64",
+                          "id": 1
+                        },
+                        "isOnline": {
+                          "type": "bool",
+                          "id": 2
+                        }
+                      }
+                    },
+                    "ChangeAvatarUrl": {
+                      "fields": {
+                        "userId": {
+                          "type": "int64",
+                          "id": 1
+                        },
+                        "avatarUrl": {
+                          "type": "string",
+                          "id": 2
+                        }
+                      }
+                    },
+                    "HeartBeatData": {
+                      "fields": {
+                        "jsonCommand": {
+                          "type": "string",
+                          "id": 1
+                        }
+                      }
+                    },
+                    "ServerVersionInfo": {
+                      "fields": {
+                        "serverVersion": {
+                          "type": "string",
+                          "id": 1
+                        }
+                      }
+                    },
+                    "ErrorInfo": {
+                      "fields": {
+                        "errorCode": {
+                          "type": "sint32",
+                          "id": 1
+                        },
+                        "errorMessage": {
+                          "type": "string",
+                          "id": 2
+                        }
+                      }
+                    },
+                    "ErrorMessage": {
+                      "fields": {
+                        "gsError": {
+                          "type": "ErrorInfo",
+                          "id": 1
+                        },
+                        "platformError": {
+                          "type": "ErrorInfo",
+                          "id": 2
+                        }
+                      }
+                    },
+                    "VersusBaseUpdate": {
+                      "oneofs": {
+                        "updateOneof": {
+                          "oneof": [
+                            "userBaseInfo",
+                            "roomSeatsInfo",
+                            "updateBalance",
+                            "changeRoundId",
+                            "changeStepInfo",
+                            "changeOnlineStatus",
+                            "changeAvatarUrl",
+                            "heartBeatData",
+                            "serverVersionInfo",
+                            "errorMessage"
+                          ]
+                        }
+                      },
+                      "fields": {
+                        "userBaseInfo": {
+                          "type": "UserEnterInfo",
+                          "id": 1
+                        },
+                        "roomSeatsInfo": {
+                          "type": "RoomSeatsInfo",
+                          "id": 2
+                        },
+                        "updateBalance": {
+                          "type": "UpdateBalance",
+                          "id": 3
+                        },
+                        "changeRoundId": {
+                          "type": "ChangeRoundId",
+                          "id": 4
+                        },
+                        "changeStepInfo": {
+                          "type": "ChangeUserStep",
+                          "id": 5
+                        },
+                        "changeOnlineStatus": {
+                          "type": "ChangeOnlineStatus",
+                          "id": 6
+                        },
+                        "changeAvatarUrl": {
+                          "type": "ChangeAvatarUrl",
+                          "id": 7
+                        },
+                        "heartBeatData": {
+                          "type": "HeartBeatData",
+                          "id": 10
+                        },
+                        "serverVersionInfo": {
+                          "type": "ServerVersionInfo",
+                          "id": 14
+                        },
+                        "errorMessage": {
+                          "type": "ErrorMessage",
+                          "id": 21
+                        }
+                      }
+                    },
+                    "ServerToClient": {
+                      "fields": {
+                        "errorCode": {
+                          "type": "sint32",
+                          "id": 1
+                        },
+                        "errorString": {
+                          "type": "string",
+                          "id": 2
+                        },
+                        "updateList": {
+                          "rule": "repeated",
+                          "type": "VersusBaseUpdate",
+                          "id": 3
+                        }
+                      }
+                    },
+                    "ClientToServer": {
+                      "fields": {
+                        "jsonCommand": {
+                          "type": "string",
+                          "id": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="222,68">
+  <controller name="ctrlCardType" exported="true" pages="0,Default,1,NoNiu,2,Niu_1,3,Niu_2,4,Niu_3,5,Niu_4,6,Niu_5,7,Niu_6,8,Niu_7,9,Niu_8,10,Niu_9,11,NiuNiu,12,Four_Niu,13,FiveNiu,14,Bomb,15,FiveSmall,16,done" selected="16"/>
+  <displayList>
+    <loader id="n123_em2v" name="n0" xy="0,0" pivot="0.5,0.5" size="222,68" rotation="-10" fill="scaleFree">
+      <gearIcon controller="ctrlCardType" pages="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" values="ui://spf3kkkguev379|ui://spf3kkkguev37f|ui://spf3kkkguev37g|ui://spf3kkkgihjcas|ui://spf3kkkguev37h|ui://spf3kkkguev37i|ui://spf3kkkguev37j|ui://spf3kkkguev37k|ui://spf3kkkguev37l|ui://spf3kkkguev37a|ui://spf3kkkguev37b|ui://spf3kkkgihjcat|ui://spf3kkkguev37c|ui://spf3kkkguev37d|ui://spf3kkkguev37e" default=""/>
+    </loader>
+    <image id="n124_rujo" name="n124" src="fgruav" fileName="assets/game/cn/tx_done.png" xy="30,0">
+      <gearDisplay controller="ctrlCardType" pages="16"/>
+    </image>
+  </displayList>
+</component>

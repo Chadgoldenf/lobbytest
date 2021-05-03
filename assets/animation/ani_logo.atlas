@@ -1,0 +1,251 @@
+
+ani_logo.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect_light
+  rotate: false
+  xy: 2, 2
+  size: 73, 59
+  orig: 73, 59
+  offset: 0, 0
+  index: -1
+logo_chip
+  rotate: false
+  xy: 147, 5
+  size: 58, 56
+  orig: 58, 56
+  offset: 0, 0
+  index: -1
+logo_chip_b
+  rotate: false
+  xy: 207, 5
+  size: 58, 56
+  orig: 58, 56
+  offset: 0, 0
+  index: -1
+logo_chip_b_0
+  rotate: false
+  xy: 698, 108
+  size: 94, 89
+  orig: 94, 89
+  offset: 0, 0
+  index: -1
+logo_gaodeng_00
+  rotate: false
+  xy: 2, 827
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_01
+  rotate: false
+  xy: 2, 636
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_02
+  rotate: false
+  xy: 350, 827
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_03
+  rotate: false
+  xy: 2, 445
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_04
+  rotate: false
+  xy: 350, 636
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_05
+  rotate: true
+  xy: 698, 670
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_06
+  rotate: false
+  xy: 2, 254
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_07
+  rotate: false
+  xy: 350, 445
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_08
+  rotate: false
+  xy: 2, 63
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_09
+  rotate: false
+  xy: 350, 254
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gaodeng_10
+  rotate: true
+  xy: 698, 322
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_gound
+  rotate: false
+  xy: 350, 63
+  size: 346, 189
+  orig: 346, 189
+  offset: 0, 0
+  index: -1
+logo_light_00
+  rotate: true
+  xy: 338, 19
+  size: 42, 68
+  orig: 42, 68
+  offset: 0, 0
+  index: -1
+logo_light_01
+  rotate: false
+  xy: 905, 183
+  size: 83, 90
+  orig: 83, 90
+  offset: 0, 0
+  index: -1
+logo_light_02
+  rotate: false
+  xy: 889, 895
+  size: 132, 121
+  orig: 132, 121
+  offset: 0, 0
+  index: -1
+logo_light_03
+  rotate: false
+  xy: 698, 199
+  size: 125, 121
+  orig: 125, 121
+  offset: 0, 0
+  index: -1
+logo_light_04
+  rotate: false
+  xy: 889, 775
+  size: 114, 118
+  orig: 114, 118
+  offset: 0, 0
+  index: -1
+logo_light_05
+  rotate: true
+  xy: 77, 3
+  size: 58, 68
+  orig: 58, 68
+  offset: 0, 0
+  index: -1
+logo_light_06
+  rotate: true
+  xy: 794, 111
+  size: 86, 74
+  orig: 86, 74
+  offset: 0, 0
+  index: -1
+logo_light_07
+  rotate: true
+  xy: 798, 27
+  size: 82, 75
+  orig: 82, 75
+  offset: 0, 0
+  index: -1
+logo_light_08
+  rotate: true
+  xy: 267, 19
+  size: 42, 69
+  orig: 42, 69
+  offset: 0, 0
+  index: -1
+logo_poker
+  rotate: false
+  xy: 875, 108
+  size: 83, 73
+  orig: 83, 73
+  offset: 0, 0
+  index: -1
+logo_poker_b
+  rotate: false
+  xy: 875, 33
+  size: 83, 73
+  orig: 83, 73
+  offset: 0, 0
+  index: -1
+logo_qipai_00
+  rotate: false
+  xy: 889, 695
+  size: 98, 78
+  orig: 98, 78
+  offset: 0, 0
+  index: -1
+logo_qipai_01
+  rotate: false
+  xy: 889, 615
+  size: 98, 78
+  orig: 98, 78
+  offset: 0, 0
+  index: -1
+logo_qipai_02
+  rotate: false
+  xy: 889, 535
+  size: 98, 78
+  orig: 98, 78
+  offset: 0, 0
+  index: -1
+logo_qipai_03
+  rotate: false
+  xy: 889, 455
+  size: 98, 78
+  orig: 98, 78
+  offset: 0, 0
+  index: -1
+logo_qipai_04
+  rotate: false
+  xy: 889, 375
+  size: 98, 78
+  orig: 98, 78
+  offset: 0, 0
+  index: -1
+logo_qipai_05
+  rotate: true
+  xy: 825, 222
+  size: 98, 78
+  orig: 98, 78
+  offset: 0, 0
+  index: -1
+logo_qipai_06
+  rotate: false
+  xy: 698, 28
+  size: 98, 78
+  orig: 98, 78
+  offset: 0, 0
+  index: -1
+logo_qipai_07
+  rotate: true
+  xy: 905, 275
+  size: 98, 78
+  orig: 98, 78
+  offset: 0, 0
+  index: -1

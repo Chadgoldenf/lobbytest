@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="138,53">
+  <controller name="ctrlBetInfo" exported="true" pages="0,None,1,1,2,2,3,3,4,5,5,6,17,7,18,8,19,9,20,10" selected="9"/>
+  <displayList>
+    <loader id="n0_uev3" name="n0" xy="0,0" size="138,53" url="ui://spf3kkkgfgruaz" fill="scaleFree" shrinkOnly="true">
+      <gearIcon controller="ctrlBetInfo" pages="0,2,3,4,5,17,18,19,20" values="|ui://spf3kkkguev371|ui://spf3kkkguev372|ui://spf3kkkguev373|ui://spf3kkkguev374|ui://spf3kkkgfgruaw|ui://spf3kkkgfgruax|ui://spf3kkkgfgruay|ui://spf3kkkgfgruaz" default="ui://spf3kkkguev370"/>
+    </loader>
+  </displayList>
+</component>

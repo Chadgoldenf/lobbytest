@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080">
+  <controller name="ctrlWindowType" exported="true" pages="3,None,0,Win,1,Lose" selected="0"/>
+  <controller name="ctrlTopWinner" exported="true" pages="0,Player_0,1,Player_1,2,Player_2,3,Player_3" selected="0"/>
+  <displayList>
+    <image id="n58_uev3" name="n0" src="uev38k" fileName="assets/common/ui/pic_black.png" xy="-390,-810" pivot="0.5,0.5" size="2700,2700" alpha="0.7">
+      <relation target="" sidePair=""/>
+    </image>
+    <loader id="n1_uev3" name="n1" xy="0,314" pivot="0.5,0.5" size="1920,520" url="ui://spf3kkkghi0u2h" fill="scaleFree">
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2c" default="ui://spf3kkkghi0u2h"/>
+    </loader>
+    <loader3D id="n0_uev3" name="aniLoader" xy="0,0" pivot="0.5,0.5" size="1920,1123" touchable="false" fill="scale" shrinkOnly="true" animation="animation" skin="" loop="true">
+      <gearIcon controller="ctrlWindowType" pages="0,1" values="ui://spf3kkkggj3sen|ui://spf3kkkggj3seq" default=""/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader3D>
+    <loader id="n3_uev3" name="n3" xy="0,430" size="1920,76" group="n11_uev3" url="ui://spf3kkkghi0u2i" fill="scaleFree" color="#646464">
+      <gearColor controller="ctrlWindowType" pages="1" values="#ffffff" default="#646464"/>
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2d" default="ui://spf3kkkghi0u2i"/>
+    </loader>
+    <loader id="n6_uev3" name="n4" xy="0,531" size="1920,76" group="n11_uev3" url="ui://spf3kkkghi0u2i" fill="scaleFree" color="#646464">
+      <gearColor controller="ctrlWindowType" pages="1" values="#ffffff" default="#646464"/>
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2d" default="ui://spf3kkkghi0u2i"/>
+    </loader>
+    <loader id="n7_uev3" name="n5" xy="0,632" size="1920,76" group="n11_uev3" url="ui://spf3kkkghi0u2i" fill="scaleFree" color="#646464">
+      <gearColor controller="ctrlWindowType" pages="1" values="#ffffff" default="#646464"/>
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2d" default="ui://spf3kkkghi0u2i"/>
+    </loader>
+    <loader id="n8_uev3" name="n6" xy="0,733" size="1920,77" group="n11_uev3" url="ui://spf3kkkghi0u2i" fill="scaleFree" color="#646464">
+      <gearColor controller="ctrlWindowType" pages="1" values="#ffffff" default="#646464"/>
+      <gearIcon controller="ctrlWindowType" pages="1" values="ui://spf3kkkghi0u2d" default="ui://spf3kkkghi0u2i"/>
+    </loader>
+    <group id="n11_uev3" name="n2" xy="0,430" size="1920,380" advanced="true" layout="vt" lineGap="25" excludeInvisibles="true" autoSizeDisabled="true"/>
+    <image id="n12_uev3" name="n8" src="hi0u2i" fileName="assets/common/ui/pic_winList.png" xy="0,430" size="1920,76">
+      <gearXY controller="ctrlTopWinner" pages="1,2,3" values="0,531|0,632|0,733" default="0,430"/>
+    </image>
+    <text id="n13_uev3" name="n11" xy="450,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="昵称">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <text id="n14_uev3" name="n12" xy="684,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="牌型">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <text id="n15_uev3" name="n13" xy="918,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="底分">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <text id="n16_uev3" name="n14" xy="1152,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="下注">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <text id="n17_uev3" name="n15" xy="1386,374" pivot="0.5,0.5" size="84,54" group="n18_uev3" fontSize="40" color="#ffe6cd" text="得分">
+      <gearColor controller="ctrlWindowType" pages="1" values="#dcb1e0,#000000" default="#ffe6cd,#000000"/>
+    </text>
+    <group id="n18_uev3" name="n10" xy="450,374" size="1020,54"/>
+    <component id="n26_uev3" name="player_0" src="em2vac" fileName="assets/views/window/settlement/win_list_item.xml" xy="425,444" size="1078,48" group="n59_em2v" controller="ctrlPlayerType,0,ctrlWinLoseType,0"/>
+    <component id="n32_uev3" name="player_1" src="em2vac" fileName="assets/views/window/settlement/win_list_item.xml" xy="425,545" size="1078,49" group="n59_em2v" controller="ctrlPlayerType,1,ctrlWinLoseType,0"/>
+    <component id="n38_uev3" name="player_2" src="em2vac" fileName="assets/views/window/settlement/win_list_item.xml" xy="425,647" size="1078,47" group="n59_em2v" controller="ctrlPlayerType,1,ctrlWinLoseType,0"/>
+    <component id="n44_uev3" name="player_3" src="em2vac" fileName="assets/views/window/settlement/win_list_item.xml" xy="425,747" size="1078,49" group="n59_em2v" controller="ctrlPlayerType,1,ctrlWinLoseType,0"/>
+    <group id="n59_em2v" name="winList" xy="425,444" size="1078,352" advanced="true" layout="vt" lineGap="53" excludeInvisibles="true" autoSizeDisabled="true"/>
+    <image id="n61_rujo" name="n61" src="uev36z" fileName="assets/game/cn/pic_village.png" xy="308,444">
+      <gearXY controller="ctrlTopWinner" pages="1,2,3" values="308,543|308,644|308,745" default="308,444"/>
+    </image>
+  </displayList>
+</component>

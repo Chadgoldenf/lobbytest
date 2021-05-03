@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1920,1080">
+  <controller name="ctrlPlayer_1" exported="true" pages="0,None,6,Show" selected="0"/>
+  <controller name="ctrlPlayer_2" pages="0,None,1,show" selected="0"/>
+  <controller name="ctrlPlayer_3" pages="0,None,1,Show" selected="0"/>
+  <displayList>
+    <image id="n4_ihjc" name="cardLicensing_0" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n30_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n8_ihjc" name="cardLicensing_1" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n30_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n11_ihjc" name="cardLicensing_2" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n30_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n12_ihjc" name="cardLicensing_3" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n30_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n13_ihjc" name="cardLicensing_4" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n30_gj3s" aspect="true" scale="0.5,0.5"/>
+    <group id="n30_gj3s" name="group3" xy="910,483" size="100,137" advanced="true">
+      <gearDisplay controller="ctrlPlayer_3" pages="1"/>
+    </group>
+    <image id="n14_ihjc" name="cardLicensing_5" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n31_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n15_ihjc" name="cardLicensing_6" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n31_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n16_ihjc" name="cardLicensing_7" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n31_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n17_ihjc" name="cardLicensing_8" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n31_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n18_ihjc" name="cardLicensing_9" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n31_gj3s" aspect="true" scale="0.5,0.5"/>
+    <group id="n31_gj3s" name="group2" xy="910,483" size="100,137" advanced="true">
+      <gearDisplay controller="ctrlPlayer_2" pages="1"/>
+    </group>
+    <image id="n23_ihjc" name="cardLicensing_10" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n32_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n22_ihjc" name="cardLicensing_11" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n32_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n19_ihjc" name="cardLicensing_12" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n32_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n20_ihjc" name="cardLicensing_13" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n32_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n21_ihjc" name="cardLicensing_14" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n32_gj3s" aspect="true" scale="0.5,0.5"/>
+    <group id="n32_gj3s" name="group1" xy="910,483" size="100,137" advanced="true">
+      <gearDisplay controller="ctrlPlayer_1" pages="6"/>
+    </group>
+    <image id="n24_ihjc" name="cardLicensing_15" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n33_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n25_ihjc" name="cardLicensing_16" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n33_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n26_ihjc" name="cardLicensing_17" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n33_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n27_ihjc" name="cardLicensing_18" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n33_gj3s" aspect="true" scale="0.5,0.5"/>
+    <image id="n28_ihjc" name="cardLicensing_19" src="hi0u4n" fileName="assets/common/poker/card_54.png" xy="910,483" pivot="0.5,0.5" size="100,137" group="n33_gj3s" aspect="true" scale="0.5,0.5"/>
+    <group id="n33_gj3s" name="group0" xy="910,483" size="100,137"/>
+  </displayList>
+  <transition name="licensing" options="4">
+    <item time="0" type="Scale" target="n11_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n12_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n13_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n14_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n15_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n16_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n17_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n18_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n19_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n20_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n21_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n22_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n23_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n24_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n25_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n26_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n27_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n28_ihjc" tween="true" startValue="0.5,0.5" endValue="1.29,1.29" duration="4"/>
+    <item time="0" type="Scale" target="n4_ihjc" value="0.5,0.5"/>
+    <item time="0" type="Scale" target="n8_ihjc" value="0.5,0.5"/>
+    <item time="0" type="XY" target="n11_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n12_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n13_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n14_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n15_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n16_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n17_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n18_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n19_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n20_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n21_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n22_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n23_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n24_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n25_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n26_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n27_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n28_ihjc" tween="true" startValue="910,483" endValue="651,820" duration="4"/>
+    <item time="0" type="XY" target="n4_ihjc" value="910,483"/>
+    <item time="0" type="XY" target="n8_ihjc" value="910,483"/>
+    <item time="1" type="Scale" target="n14_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="1" type="Scale" target="n23_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="1" type="Scale" target="n4_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="1" type="XY" target="n14_ihjc" tween="true" startValue="910,483" endValue="1026,181" duration="4"/>
+    <item time="1" type="XY" target="n23_ihjc" tween="true" startValue="910,483" endValue="190,580" duration="4"/>
+    <item time="1" type="XY" target="n4_ihjc" tween="true" startValue="910,483" endValue="1459,580" duration="4"/>
+    <item time="2" type="Scale" target="n11_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="2" type="Scale" target="n15_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="2" type="Scale" target="n22_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="2" type="Scale" target="n27_ihjc" tween="true" startValue="0.5,0.5" endValue="1.29,1.29" duration="4"/>
+    <item time="2" type="Scale" target="n8_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="2" type="XY" target="n11_ihjc" tween="true" startValue="910,483" endValue="1539,580" duration="4"/>
+    <item time="2" type="XY" target="n15_ihjc" tween="true" startValue="910,483" endValue="1066,181" duration="4"/>
+    <item time="2" type="XY" target="n22_ihjc" tween="true" startValue="910,483" endValue="230,580" duration="4"/>
+    <item time="2" type="XY" target="n27_ihjc" tween="true" startValue="910,483" endValue="791,820" duration="4"/>
+    <item time="2" type="XY" target="n8_ihjc" tween="true" startValue="910,483" endValue="1499,580" duration="4"/>
+    <item time="3" type="Scale" target="n12_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="3" type="Scale" target="n16_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="3" type="Scale" target="n19_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="3" type="XY" target="n12_ihjc" tween="true" startValue="910,483" endValue="1579,580" duration="4"/>
+    <item time="3" type="XY" target="n16_ihjc" tween="true" startValue="910,483" endValue="1106,181" duration="4"/>
+    <item time="3" type="XY" target="n19_ihjc" tween="true" startValue="910,483" endValue="270,580" duration="4"/>
+    <item time="4" type="Scale" target="n13_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="4" type="Scale" target="n17_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="4" type="Scale" target="n20_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="4" type="Scale" target="n26_ihjc" tween="true" startValue="0.5,0.5" endValue="1.29,1.29" duration="4"/>
+    <item time="4" type="XY" target="n13_ihjc" tween="true" startValue="910,483" endValue="1619,580" duration="4"/>
+    <item time="4" type="XY" target="n17_ihjc" tween="true" startValue="910,483" endValue="1147,181" duration="4"/>
+    <item time="4" type="XY" target="n20_ihjc" tween="true" startValue="910,483" endValue="310,580" duration="4"/>
+    <item time="4" type="XY" target="n26_ihjc" tween="true" startValue="910,483" endValue="932,820" duration="4"/>
+    <item time="5" type="Scale" target="n18_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="5" type="Scale" target="n21_ihjc" tween="true" startValue="0.5,0.5" endValue="1,1" duration="4"/>
+    <item time="5" type="XY" target="n18_ihjc" tween="true" startValue="910,483" endValue="1186,181" duration="4"/>
+    <item time="5" type="XY" target="n21_ihjc" tween="true" startValue="910,483" endValue="350,580" duration="4"/>
+    <item time="6" type="Scale" target="n25_ihjc" tween="true" startValue="0.5,0.5" endValue="1.29,1.29" duration="4"/>
+    <item time="6" type="XY" target="n25_ihjc" tween="true" startValue="910,483" endValue="1073,820" duration="4"/>
+    <item time="8" type="Scale" target="n24_ihjc" tween="true" startValue="0.5,0.5" endValue="1.29,1.29" duration="4"/>
+    <item time="8" type="XY" target="n24_ihjc" tween="true" startValue="910,483" endValue="1215,820" duration="4"/>
+  </transition>
+</component>

@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package com.secunet.common.game.protobuf.common;
+option  optimize_for = SPEED;
+option  java_multiple_files = true;
+option  java_package = "com.secunet.common.game.protobuf.common";
+
+
+enum ProtocolID {
+  option allow_alias = true;
+
+  PROTOCOL_ID_NONE = 0;
+
+  /* Server版本號
+  *  server -> client: ServerVersionInfo
+  */
+  MSG_SERVER_VERSION = 1;
+
+  /* 改變玩家頭像
+  *  server -> client: ChangeAvatarUrl
+  */
+  CMD_USER_AVATAR_URL = 3;
+  MSG_USER_AVATAR_URL = 3;
+
+  /** 指令
+   * client -> server
+   * server -> client
+   */
+  CMD_DEBUG_COMMAND = 4;
+  MSG_DEBUG_COMMAND = 4;
+}
+
+message ServerVersionInfo {
+  string server_version = 1;
+}
+
+message ChangeAvatarUrl {
+  int64 user_id = 1;
+  string avatar_url = 2;
+}
+
+message DebugCommandResult {
+  int32 result_code = 1;
+}
+
+message CommonUpdate {
+  oneof update_oneof {
+    ServerVersionInfo server_version_info = 1;
+    ChangeAvatarUrl change_avatar_url = 2;
+    DebugCommandResult debug_command_result = 3;
+  }
+}
+
+message ServerToClient {
+  sint32 error_code = 1;
+  string error_string = 2;
+  repeated CommonUpdate update_list = 3;
+}
+
+message ClientToServer {
+    string json_command = 1;
+}

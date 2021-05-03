@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "d0e4a7f4-c0e8-4693-a9a8-29cdde97e34e",
+  "isBundle": false,
+  "bundleName": "texture101",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

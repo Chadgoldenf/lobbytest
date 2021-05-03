@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="693,177">
+  <displayList>
+    <loader id="n27_uev3" name="card_0" xy="0,0" pivot="0.5,0.5" size="129,177" group="n24_uev3" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <loader id="n28_uev3" name="card_1" xy="141,0" pivot="0.5,0.5" size="129,177" group="n24_uev3" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <loader id="n29_uev3" name="card_2" xy="282,0" pivot="0.5,0.5" size="129,177" group="n24_uev3" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <loader id="n31_uev3" name="card_4" xy="564,0" pivot="0.5,0.5" size="129,177" group="n24_uev3" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <loader id="n30_uev3" name="card_3" xy="423,0" pivot="0.5,0.5" size="129,177" group="n24_uev3" url="ui://spf3kkkghi0u39" fill="scaleNoBorder"/>
+    <group id="n24_uev3" name="card" xy="0,0" size="693,177"/>
+  </displayList>
+  <transition name="transCard_0">
+    <item time="0" type="XY" target="n27_uev3" tween="true" startValue="282,0" endValue="282,0" duration="2"/>
+    <item time="0" type="XY" target="n28_uev3" tween="true" startValue="282,0" endValue="141,0" duration="3"/>
+    <item time="0" type="XY" target="n30_uev3" tween="true" startValue="282,0" endValue="423,0" duration="3"/>
+    <item time="0" type="XY" target="n31_uev3" value="282,0"/>
+    <item time="2" type="XY" target="n27_uev3" tween="true" startValue="282,0" endValue="0,0" duration="3"/>
+    <item time="2" type="XY" target="n31_uev3" tween="true" startValue="282,0" endValue="564,0" duration="3"/>
+  </transition>
+</component>

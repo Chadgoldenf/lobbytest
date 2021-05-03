@@ -1,0 +1,194 @@
+// protoc -I=. --cpp_out=. ./versus_base.proto
+// protoc --java_out=./ ./com/secunet/versus_gamebase/protobuf/versus_base.proto
+syntax = "proto3";
+package com.secunet.versus_gamebase.protobuf;
+
+option optimize_for = SPEED;
+option java_package = "com.secunet.versus_gamebase.protobuf";
+
+enum ProtocolID {
+    PROTOCOLID_NONE = 0;
+    /* 繼續
+    *  client -> server
+    */
+    CMD_PLAY_AGAIN = 1;
+
+    /* 繼續或博一博
+    *  client -> server
+    */
+    CMD_CONTINUE_OR_BET = 2;
+
+    /* 放棄配對
+    *  client -> server
+    */
+    CMD_CANCEL_MATCHING = 3;
+
+    /* 做心跳
+    *  client -> server:
+    */
+    CMD_HEART_BEAT = 8;
+
+    /* Server版本號
+    *  server -> client: ServerVersionInfo
+    */
+    MSG_SERVER_VERSION = 101;
+
+    /* 玩家進入遊戲的基本資料
+    *  server -> client: UserBaseInfo
+    */
+    MSG_USER_ENTER_INFO = 102;
+
+    /* 房間座位資料
+    *  server -> client: SeatsInfo
+    */
+    MSG_ROOM_SEATS_INFO = 103;
+
+    /* 更新玩家餘額
+    *  server -> client: UpdateBalance
+    */
+    MSG_UPDATE_BALANCE = 104;
+
+    /* 改變局號
+    *  server -> client: ChangeRoundId
+    */
+    MSG_CHANGE_ROUND_ID = 105;
+
+    /* 改變玩家階段
+    *  server -> client: ChangeUserStep
+    */
+    MSG_CHANGE_GAME_STEP = 106;
+
+    /* 改變玩家在線狀態
+    *  server -> client: ChangeOnlineStatus
+    */
+    MSG_USER_ONLINE_STATUS = 107;
+
+    /* 改變玩家頭像
+    *  server -> client: ChangeAvatarUrl
+    */
+    MSG_USER_AVATAR_URL = 108;
+
+    /* 回傳心跳
+    *  server -> client: HeartBeatData
+    */
+    MSG_HEART_BEAT = 110;
+
+    ERROR = 400;
+}
+
+enum UserStep {
+    STEP_UNKNOWN = 0;
+
+    STEP_PLAY_START = 10;
+    STEP_PRE_CHECK = 12;
+    STEP_ENTER_WITHHOLDING_AMOUNT = 14;
+    STEP_MATCHING = 16;
+    STEP_PLAYING_VERSUS_GAME = 20;
+    STEP_CONTINUE_OR_BET = 30;
+    STEP_PLAYING_LITTLE_GAME = 40;
+    STEP_PLAY_AGAIN = 50;
+    STEP_EXIT_GAME = 100;
+}
+
+enum VSGameErrorCode {
+    UNKNOWN_ERROR = 0;
+
+    OK = 1;
+}
+
+message UserEnterInfo {
+    int32 game_id = 1;
+    string game_setting_json = 2;
+    int32 room_kind = 3;
+    string room_info_json = 4;       // json格式, 前端跟GS要訂好
+    int64 user_id = 5;
+    string user_name = 6;
+    string nick_name = 7;
+    string account_balance = 8;
+    string game_chip = 9;
+    string avatar_url = 10;
+}
+
+message RoomSeatsInfo {
+    message SeatUser {
+        int32 seat_id = 1;
+        string user_name = 2;
+        string nick_name = 3;
+        string account_balance = 4;
+        string game_chip = 5;
+        string avatar_url = 6;
+        bool is_online = 7;
+    }
+    repeated SeatUser seat_user_list = 2;
+}
+
+message UpdateBalance {
+    string account_balance = 1;
+}
+
+message ChangeRoundId {
+    string round_id = 1;
+}
+
+message ChangeUserStep {
+    int32 step = 2;
+    int64 time_left_ms = 4;
+}
+
+message ChangeOnlineStatus {
+    int64 user_id = 1;
+    bool is_online = 2;
+}
+
+message ChangeAvatarUrl {
+    int64 user_id = 1;
+    string avatar_url = 2;
+}
+
+message HeartBeatData {
+    string json_command = 1;
+}
+
+//message JsonCommand {
+//    string json_command = 1;
+//}
+
+message ServerVersionInfo {
+    string server_version = 1;
+}
+
+message ErrorInfo {
+    sint32 error_code = 1;
+    string error_message = 2;
+}
+
+message ErrorMessage {
+    ErrorInfo gs_error = 1;
+    ErrorInfo platform_error = 2;
+}
+
+message VersusBaseUpdate {
+    oneof update_oneof {
+        UserEnterInfo user_base_info = 1;
+        RoomSeatsInfo room_seats_info = 2;
+        UpdateBalance update_balance = 3;
+        ChangeRoundId change_round_id = 4;
+        ChangeUserStep change_step_info = 5;
+        ChangeOnlineStatus change_online_status = 6;
+        ChangeAvatarUrl change_avatar_url = 7;
+        HeartBeatData heart_beat_data = 10;
+
+        ServerVersionInfo server_version_info = 14;
+        ErrorMessage error_message = 21;
+    }
+}
+
+message ServerToClient {
+    sint32 error_code = 1;
+    string error_string = 2;
+    repeated VersusBaseUpdate update_list = 3;
+}
+
+message ClientToServer {
+    string json_command = 1;
+}

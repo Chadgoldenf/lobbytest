@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "df6fde28-604f-427a-a038-0a4e008b5379",
+  "isBundle": false,
+  "bundleName": "scene101",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}

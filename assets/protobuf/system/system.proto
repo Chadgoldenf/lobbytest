@@ -1,0 +1,84 @@
+syntax = "proto3";
+
+package com.secunet.common.game.protobuf.system;
+option optimize_for = SPEED;
+option  java_multiple_files = true;
+option java_package = "com.secunet.common.game.protobuf.system";
+
+enum ProtocolID {
+  option allow_alias = true;
+
+  PROTOCOL_ID_NONE = 0;
+
+  /* 登入
+  *  client -> server
+  */
+  CMD_LOGIN = 1;
+  MSG_LOGIN_RESULT = 1;
+
+  /* Client UI已Login完畢, 可以開始收訊息
+  *  client -> server
+  */
+  CMD_CLIENT_UI_READY = 2;
+
+  /* 斷線訊息
+  */
+  CMD_DISCONNECT = 3;
+  MSG_DISCONNECT = 3;
+
+  /* 心跳封包
+  *  HeartBeatData
+  */
+  CMD_HEART_BEAT = 4;
+  MSG_HEART_BEAT = 4;
+}
+
+message LoginData {
+  string platform_code = 1;
+  int64 ms_instance_id = 2;
+  int32 game_id = 3;
+  int32 arena_id = 4;
+  int32 branch_id = 5;
+  string access_token = 6;
+  int64 user_id = 7;
+  string user_name = 8;
+  string nick_name = 9;
+  string avatar_url = 10;
+  string game_parameter = 11;
+  string browser = 12;
+  string device_os = 13;
+}
+
+message LoginResult {
+  sint32 error_code = 1;
+  string error_message = 2;
+}
+
+message ServerDisconnect {
+  sint32 reason = 1;
+  string disconnect_cause = 2;
+}
+
+message HeartBeatData {
+  string json_command = 1;
+}
+
+message SystemUpdate {
+  oneof update_oneof {
+    LoginResult login_result = 1;
+    ServerDisconnect server_disconnect = 3;
+    HeartBeatData heart_beat_data = 4;
+  }
+}
+
+message ServerToClient {
+  repeated SystemUpdate update_list = 1;
+}
+
+message ClientToServer {
+  oneof request {
+    string json_command = 1;
+    LoginData login_data = 2;
+    HeartBeatData heart_beat_data = 3;
+  }
+}

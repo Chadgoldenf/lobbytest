@@ -1,4 +1,5 @@
 const { ccclass, property } = cc._decorator;
+import { divide } from "lodash";
 import * as protobuf from "protobufjs";
 import cc_101Binder from "../../ui/cc_101/cc_101Binder";
 import main_game from "../../ui/cc_101/main_game";
@@ -25,10 +26,18 @@ export default class GameRoot extends cc.Component {
         //let sysProto = protobuf.Root.fromJSON(this.sysJson.json);
         //console.warn("sysProto : ", sysProto);
     }
-
+    onDestroy(){
+        cc.game.off('fire');
+    }
     start() {
         let self = this;
-        //cc.game.addPersistRootNode()
+
+        console.log("lodash1 ",divide(20,5));
+        
+        cc.game.on('fire',((date:Date)=>{
+            console.log("recv fire",date);
+        }));
+
         cc.assetManager.loadBundle("http://localhost:8081/assets/cc_101", function (err, bundle) {
             fgui.UIPackage.loadPackage(bundle,"cc_101",function(err,pkg){
                 cc_101Binder.bindAll();
@@ -37,6 +46,7 @@ export default class GameRoot extends cc.Component {
                 view.setSize(fgui.GRoot.inst.width, fgui.GRoot.inst.height);
                 view.addRelation(fgui.GRoot.inst, fgui.RelationType.Size);
                 fgui.GRoot.inst.addChild(view);
+                view.ctrlGameStep.selectedIndex = 1;
                 self.subgame();
             });
         });
@@ -58,22 +68,6 @@ export default class GameRoot extends cc.Component {
         //         });
         //     });
         // });
-        
-        // cc.resources.loadDir("cc_101", function(err, assets) {
-        //     console.warn("assets : ", assets);
-        //     //都加载完毕后再调用addPackage
-        //     fgui.UIPackage.addPackage("cc_101/cc_101"); 
-        //     cc_101Binder.bindAll();
-        //     fgui.GRoot.create();
-        //     //下面就可以开始创建包里的界面了。
-        //     let view = main_game.createInstance();
-        //     view.setSize(fgui.GRoot.inst.width, fgui.GRoot.inst.height);
-        //     view.addRelation(fgui.GRoot.inst, fgui.RelationType.Size);
-        //     fgui.GRoot.inst.addChild(view);
-        //     // self.connectGameServer();
-
-        //     self.subgame();
-        // });
 
 
         //let socketConfig:WebSocketSubjectConfig<ArrayBuffer> = {
@@ -84,9 +78,8 @@ export default class GameRoot extends cc.Component {
     private subgame():void{
         let self = this;
         this.scheduleOnce(function() {
-            console.log("chad");
             if( self.sub_bundle === null ){
-                cc.assetManager.loadBundle('http://localhost:8081/assets/subgame3', function (err, bundle) {
+                cc.assetManager.loadBundle('http://localhost:8081/assets/subgame4', function (err, bundle) {
                     if (err) {
                         return console.error(err);
                     }
@@ -101,6 +94,7 @@ export default class GameRoot extends cc.Component {
                 if( this.testload%2 === 0 ){
                     if( self.sub_bundle != null ){
                         self.sub_bundle.releaseAll();
+                        cc.assetManager.removeBundle(self.sub_bundle);
                         self.sub_bundle = null;
                     }
                 }
@@ -109,7 +103,8 @@ export default class GameRoot extends cc.Component {
                         cc.director.runScene(scene);
                     });
                 }
+                
             }
-        }, 2);
+        }, 5);
     }
 }
